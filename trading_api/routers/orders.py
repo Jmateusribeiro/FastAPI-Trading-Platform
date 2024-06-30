@@ -6,7 +6,7 @@ using SQLModel and FastAPI.
 import random
 import asyncio
 from typing import Any, Optional
-from fastapi import APIRouter, status, HTTPException, Depends
+from fastapi import APIRouter, status, Depends
 from sqlalchemy.ext.asyncio import AsyncSession
 from fastapi_pagination.ext.sqlmodel import paginate
 from fastapi_pagination import Page
@@ -67,7 +67,7 @@ async def place_new_order(order: OrdersInput,
     responses={
         status.HTTP_200_OK: {"description": "A list of orders"},
         status.HTTP_400_BAD_REQUEST: {"description": "Invalid input"},
-    } 
+    }
 )
 async def get_orders(status: Optional[OrderStatus] = None,
                      session: AsyncSession = Depends(get_session)) -> Any:
