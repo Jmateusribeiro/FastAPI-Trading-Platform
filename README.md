@@ -1,5 +1,7 @@
 # Forex Trading Platform API
 
+[![Pylint](https://github.com/Jmateusribeiro/FastAPI-Trading-Platform/actions/workflows/pylint.yml/badge.svg)](https://github.com/Jmateusribeiro/FastAPI-Trading-Platform/actions/workflows/pylint.yml)
+
 ## Goal
     
     Implement an API to simulate a simple trading platform
