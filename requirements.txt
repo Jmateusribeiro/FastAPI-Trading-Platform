@@ -1,0 +1,6 @@
+fastapi==0.111.0
+pydantic==2.7.4
+sqlmodel==0.0.19
+fastapi-pagination==0.12.25
+SQLAlchemy==2.0.31
+aiosqlite==0.20.0
