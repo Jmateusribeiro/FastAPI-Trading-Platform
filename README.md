@@ -33,7 +33,7 @@ To run the API:
     fastapi run [path_to_app]/main.py
 
 After run this command:
-- The api will be available at http://localhost:8000/docs
+- The api will be available at http://localhost:8000
 - The documentation of the API is available at http://localhost:8000/docs 
 
 
