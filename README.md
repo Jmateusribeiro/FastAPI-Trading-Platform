@@ -26,15 +26,15 @@
 
 ## Execution
 
-The decision of whether to create a virtual env for executing the script is up to the user. In my case, I've created a virtual env, but I haven't committed it.
+The decision of whether to create a virtual env for running the script is up to the user. In my case, I've created a virtual env, but I haven't committed it.
 
 To run the API:
 
-    fastapi run main.py
+    fastapi run [path_to_app]/main.py
 
 After run this command:
-- The api will be available at http://0.0.0.0:8000
-- The documentation of the API is available at http://0.0.0.0:8000/docs 
+- The api will be available at http://localhost:8000/docs
+- The documentation of the API is available at http://localhost:8000/docs 
 
 
 ## Project Structure
