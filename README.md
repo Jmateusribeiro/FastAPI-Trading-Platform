@@ -30,7 +30,11 @@ The decision of whether to create a virtual env for executing the script is up t
 
 To run the API:
 
-    fastapi dev main.py
+    fastapi run main.py
+
+After run this command:
+- The api will be available at http://0.0.0.0:8000
+- The documentation of the API is available at http://0.0.0.0:8000/docs 
 
 
 ## Project Structure
