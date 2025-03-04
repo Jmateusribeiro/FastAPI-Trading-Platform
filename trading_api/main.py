@@ -9,7 +9,9 @@ from fastapi_pagination import add_pagination
 from trading_api.routers import orders
 
 API_DESCRIPTION = """
-A RESTful API to simulate a Forex trading platform with WebSocket support for real-time order updates.
+A RESTful API designed to simulate a Forex trading platform for creating, retrieving, and deleting orders.
+When an order is created, it is initially assigned the status "pending". 
+Over time, the order's status is automatically and randomly updated to either "executed" or "canceled", reflecting the dynamic nature of real-world trading.
 """
 
 app = FastAPI(
