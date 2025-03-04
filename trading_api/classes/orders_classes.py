@@ -70,7 +70,9 @@ class Order(SQLModel, table=True):
     id: int = sqlField(default=None, primary_key=True)
     stocks: str = sqlField(..., description="Currency pair symbol (e.g., 'EURUSD')")
     quantity: float = sqlField(..., description="Quantity of the currency pair to be traded", ge=0)
-    status: OrderStatus = sqlField(default=OrderStatus.PENDING, sa_column_kwargs={"server_default": OrderStatus.PENDING.name}, description="Status of the order")
+    status: OrderStatus = sqlField(default=OrderStatus.PENDING,
+                                   sa_column_kwargs={"server_default": OrderStatus.PENDING.name},
+                                   description="Status of the order")
     __table_args__ = (
         Index("idx_status", "status"),
     )
